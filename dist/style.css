@@ -22,3 +22,16 @@
 @media(max-width:650px){.motion-ready .reveal{transform:translateY(6px)}.hero-stage .image-frame{height:430px}.product-photo img{height:365px;object-position:50% 37%}}
 @media(prefers-reduced-motion:reduce){.reveal,.entry-ready .hero-copy h1,.entry-ready .hero-copy .lead{opacity:1!important;transform:none!important;clip-path:none!important}.pointer-light{display:none}}
 .primary{background:#087586}@media(hover:hover) and (pointer:fine){.primary:hover{background:#066573}}
+
+/* Container Scroll interpretation: 011-iphones-atibaia. Existing effects retained. */
+
+.precision-scene{perspective:1100px}.precision-panel{padding:14px;border:1px solid #54717a;background:#0c171d;transform-origin:center 70%;box-shadow:0 20px 50px #0004}
+.precision-panel:before{content:'011 / PRODUTO EM FOCO';display:block;font:11px monospace;letter-spacing:.15em;color:#a8c6d0;padding-bottom:12px}
+.precision-panel img{height:470px;object-position:50% 39%}.precision-panel>span{padding-top:4px}
+.precision-panel:after{content:'';position:absolute;top:-5px;right:-5px;width:28px;height:28px;border-top:1px solid #9bdae0;border-right:1px solid #9bdae0;pointer-events:none}
+@media(max-width:650px){.precision-panel{padding:10px}.precision-panel img{height:360px}.precision-scene{perspective:1600px}}
+
+.polished-cta{position:relative;isolation:isolate;overflow:hidden}.polished-cta:before{content:'';position:absolute;inset:-40% -20%;background:linear-gradient(110deg,transparent 40%,#fff2 50%,transparent 60%);transform:translateX(-110%);pointer-events:none}
+@media(hover:hover) and (pointer:fine){.polished-cta:hover:before,.polished-cta:focus-visible:before{animation:cta-light-pass .65s ease-out}}
+@keyframes cta-light-pass{to{transform:translateX(110%)}}
+@media(prefers-reduced-motion:reduce){[data-container-panel]{transform:none!important}.polished-cta:before{display:none}}
